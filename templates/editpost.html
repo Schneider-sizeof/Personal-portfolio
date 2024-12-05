@@ -105,7 +105,7 @@
                   <hr>
                   <div class="form-group">
                     <label for="image">update</label>
-                    <input type="file" class="form-control" name="image" required/>
+                    <input type="file" class="form-control" name="image" id="imgg" required/>
                   </div>
                   </div>
                   <small class="text-muted">upload max to 1 mb</small>
@@ -153,6 +153,10 @@
     CKEDITOR.replace('editor', {
     filebrowserImageUploadUrl: '/upload-image',
   });
+  function updatePath(input) {
+    const filePath = "{{ url_for('static', filename=blog[4]) }}";
+    document.getElementById('imgg').value = input.value || filePath;
+}
   </script>
 </body>
 

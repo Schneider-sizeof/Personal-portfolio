@@ -71,7 +71,9 @@
 
         <div class="col-md-3">
           <a
-            href="{{url_for('delete', id=blog[0])}}" onsubmit="confirmDelete()"
+            href="{{url_for('delete', id=blog[0])}}" 
+            onsubmit="confirmDelete()"
+            onclick="confirmDelete()"
             class="btn btn-block btn-danger">
             <i class="fas fa-trash"></i> Delete Post
           </a>

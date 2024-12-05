@@ -1,0 +1,99 @@
+{%extends 'base.html'%}
+{%block content%}
+      <article class="about  active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://jassous.onrender.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/lg.ico') }}" style="height:278px;" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jassous</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+              <span style="color: rgb(247, 247, 55);">Web Scraping app</span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://greatoffers.onrender.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/preview.ico') }}" style="height:278px;" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GreatOffers</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Netflix and Spotify Selling platform</span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://easyconversion-j106.onrender.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/ss.jpg') }}" style="height:278px;"alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Easyconversion</h3>
+
+                <p class="project-category">Web development</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Free and easy Conversion tool </span>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://verychecky.onrender.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{url_for('static' , filename='images/email.ico')}}"style="height:278px;" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">VeryChecky</h3>
+
+                <p class="project-category">Web developement</p>
+              </a>
+              <span style="color: rgb(247, 247, 55);">Email checker </span>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+      </article>
+      {%endblock%}

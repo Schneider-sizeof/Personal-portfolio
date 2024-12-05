@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_login import logout_user, LoginManager, current_user, login_required, login_user
 import sqlite3
@@ -229,4 +230,5 @@ def submit():
     return redirect(url_for('dashboard'))   
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000)) 
+    app.run(host="0.0.0.0", port=port)

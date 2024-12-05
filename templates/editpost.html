@@ -71,7 +71,7 @@
 
         <div class="col-md-3">
           <a
-            href="{{url_for('delete', id=blog[0])}}"
+            href="{{url_for('delete', id=blog[0])}}" onsubmit="confirmDelete()"
             class="btn btn-block btn-danger">
             <i class="fas fa-trash"></i> Delete Post
           </a>
@@ -157,7 +157,9 @@
     const filePath = "{{ url_for('static', filename=blog[4]) }}";
     document.getElementById('imgg').value = input.value || filePath;
 
-
+    function confirmDelete() {
+            return confirm("Are you sure you want to delete this post?");
+        }
   </script>
 </body>
 

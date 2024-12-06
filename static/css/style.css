@@ -1349,8 +1349,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar.active { max-height: 584px; }
 
   .sidebar-info { gap: 25px; }
-
-  .avatar-box { border-radius: 30px; }
+@keyframes glow-animation {
+      0% {
+        box-shadow: 0 0 5px 2px rgba(255, 223, 0, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 5px 2px rgba(255, 223, 0, 0.4);
+      }
+    }
+  .avatar-box { border-radius: 30px; border: 5px solid transparent; /* Transparent border */
+    position: relative;
+    background-color: rgb(209, 190, 20);
+    animation: glow-animation 1.5s infinite; }
+    
 
   .avatar-box img { width: 120px; }
 

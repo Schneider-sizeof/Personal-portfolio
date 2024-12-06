@@ -1376,6 +1376,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     top: -30px;
     right: -30px;
     padding: 10px 15px;
+    border: 5px solid transparent; /* Transparent border */
+    position: relative;
+    background-color: rgb(209, 190, 20);
+    animation: glow-animation 1.5s infinite;
   }
 
   .info_more-btn span {

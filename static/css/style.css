@@ -1366,7 +1366,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     }
   .avatar-box { border-radius: 30px; border: 5px solid transparent; /* Transparent border */
     position: relative;
-    background-color: rgb(209, 190, 20);
+    background-color: hsl(45, 100%, 72%);
     animation: glow-animation 1.5s infinite; }
     
 
@@ -1380,9 +1380,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     top: -30px;
     right: -30px;
     padding: 10px 15px;
-    border:0.5px solid transparent; /* Transparent border */
-    position: relative;
-    animation: glow-animation 1.5s infinite;
+  
   }
 
   .info_more-btn span {

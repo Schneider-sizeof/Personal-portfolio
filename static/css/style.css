@@ -1380,7 +1380,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     top: -30px;
     right: -30px;
     padding: 10px 15px;
-    border:2px solid transparent; /* Transparent border */
+    border:0.5px solid transparent; /* Transparent border */
     position: relative;
     animation: glow-animation 1.5s infinite;
   }
